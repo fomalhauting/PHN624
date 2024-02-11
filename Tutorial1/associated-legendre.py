@@ -7,20 +7,7 @@ def doublefactorial(n):
   else:
     return n * doublefactorial(n - 2);
 
-X = np.arange(-1, 1, 0.01)
-
-def legendre(n,x):
-  if n == 0:
-    return 1
-  elif n == 1:
-    return x
-  else:
-    return ((2*n-1)*x*legendre(n-1,x) - (n-1)*legendre(n-2,x))/n
-
-plt.figure(figsize=(8, 6))
-for n in range(6):
-    p = [legendre(n, x) for x in X]
-    plt.plot(X, p)
+X = np.arange(-2, 2, 0.01)
 
 def associated(l, m, x):
     if l == 0:
