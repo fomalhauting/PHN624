@@ -23,7 +23,7 @@ def protondrip(A):
 
 # Neutron drip-line
 def neutrondrip(A):
-    alpha = (av + (3*aasym) - ((2/3)*as_/np.power(A, 1/3)) + ((ac/3)*np.power(A, 2/3))) / (((ac/3)*np.power(A, 2/3)) + (4*aa))
+    alpha = (av + (3*aa) - ((2/3)*as_/np.power(A, 1/3)) + ((ac/3)*np.power(A, 2/3))) / (((ac/3)*np.power(A, 2/3)) + (4*aa))
     discriminant = 1 - alpha
     Nplus = A * (1+np.sqrt(discriminant))
     Nminus = A * (1-np.sqrt(discriminant))
